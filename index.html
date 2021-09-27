@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <img class="google-apps" src="./images/google_apps.jpeg" alt="google-apps">
-        </nav>
+      <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img
+          class="google-apps"
+          src="./images/google_apps.jpeg"
+          alt="google-apps"
+        />
+      </nav>
     </header>
 
     <main>
-        <img class="google-logo" src="./images/google.png" alt="google-logo">
-        <br>
-        
-        <div class="searchbox">
-            <input type="text"> 
-        </div>
-        
+      <img class="google-logo" src="./images/google.png" alt="google-logo" />
+      <br />
 
-        <div class="button">
+      <div class="searchbox">
+        <span class="fa fa-search icon" aria-hidden="true"></span>
+        <input class="input-field" type="text" />
+      </div>
 
-           <button class="btn">Google Search</button>
-           <button class="btn">I'm Feeling Lucky</button>
-        </div>
+      <div class="button">
+        <button class="btn">Google Search</button>
+        <button class="btn">I'm Feeling Lucky</button>
+      </div>
 
-        <p>Google offered in: <a href="#">Hausa</a> <a href="#">Igbo</a> <a href="#">Èdè Yorùbá</a> <a href="#">Nigerian Pidgin</a></p>
-
+      <p>
+        Google offered in: <a href="#">Hausa</a> <a href="#">Igbo</a>
+        <a href="#">Èdè Yorùbá</a> <a href="#">Nigerian Pidgin</a>
+      </p>
     </main>
 
     <footer>
-        <div class="top-footer">
-            <p>Nigeria</p>
+      <div class="top-footer">
+        <p>Nigeria</p>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="left">
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search works</a>
         </div>
 
+        <a href="#"
+          ><img
+            src="./images/download.png"
+            alt="carbon-neutral"
+            class="carbon-image"
+          />Carbon neutral since 2007</a
+        >
 
-        <div class="bottom-footer">
-           
-            <div class="left">
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search works</a>
-            </div>
-
-            
-            <a href="#"><img src="./images/download.png" alt="carbon-neutral" class="carbon-image">Carbon neutral since 2007</a>
-
-            <div class="right">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </div>
-              
+        <div class="right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
