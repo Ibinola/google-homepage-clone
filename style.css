@@ -1,3 +1,11 @@
+:root {
+  --border-color: #ddd;
+  --button-search-font: #3c4043;
+  --button-search-background: #f8f9fa;
+  --footer-background: #f2f2f2;
+  --footer-font: #70757a;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +48,14 @@ nav .google-apps {
 main {
   text-align: center;
   margin: 6.9em auto;
-  padding: 5em;
+  padding: 2.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+  min-height: 300px;
+  margin-top: 50px;
 }
 
 p {
@@ -51,17 +66,33 @@ main .google-logo {
   height: 80px;
 }
 
-.searchbox input {
-  width: 47%;
-  padding: 0.9em;
-  margin-top: 1em;
-  border-radius: 24px;
-  border: 1px solid #dfe1e5;
-  box-shadow: none;
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 580px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
 }
 
-.searchbox i {
-  position: absolute;
+.searchbox:hover,
+.searchbox:focus-within {
+  border-color: white;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .button {
